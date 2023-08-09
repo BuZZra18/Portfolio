@@ -8,6 +8,11 @@ body {
   color: #2f58cd;
 }
 
+h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
 .header-container {
   background: url("./images/background.jpg");
   height: 700px;
@@ -18,7 +23,7 @@ body {
 
 .header-container > h2 {
   font-size: 70px;
-  padding-top: 250px;
+  padding-top: 200px;
   color: white;
   text-shadow: 3px 3px #2f58cd;
 }
@@ -29,7 +34,6 @@ body {
   text-shadow: 3px 3px #2f58cd;
 }
 
-
 .about {
   text-align: center;
   width: 30%;
@@ -37,21 +41,46 @@ body {
   line-height: 2;
 }
 
-.about > div > p {
+.about > p {
   font-size: 18px;
   color: #696969;
 }
 
-.about > div > img {
+.about > img {
   border-radius: 100%;
   height: 150px;
   width: 150px;
   margin-bottom: 30px;
 }
 
-h2 {
-  font-size: 50px;
-  margin-bottom: 10px;
+
+.education-container > h3 {
+  font-size: 30px;
+  color: #2f58cd;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.education {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 100px;
+}
+
+.education-1 > h4, .education-2 > h4 {
+  padding-top: 30px;
+}
+
+.education-1 > p, .education-2 > p {
+  padding-top: 10px;
+  color: #696969;
+  font-size: 12px;
+}
+
+.skill-container {
+  text-align: center;
 }
 
 .skills {
@@ -60,18 +89,16 @@ h2 {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.skill-container {
-  text-align: center;
+
+.skill-container > h3 {
+  margin-bottom: 50px;
+  font-size: 30px;
 }
 
-.skill-container > h2 {
-  margin-bottom: 100px;
-}
-
-.item {
+.skill-item {
   width: 150px;
   height: 150px;
   display: flex;
@@ -102,13 +129,9 @@ a {
 }
 
 @media (max-width: 560px) {
-  .skills {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    gap: 2px;
+
+  h2 {
+    font-size: 30px;
   }
 
   .header-container {
@@ -123,29 +146,89 @@ a {
   .header-container > h3 {
     font-size:20px;
   }
-
+ 
   .about {
     margin: 30px auto;
     width: 100%;
   }
 
-  .about > div > p {
+  .about > p {
     font-size: 12px;
   }
 
-  .about > div > img {
+  .about > img {
     border-radius: 100%;
     height: 100px;
     width: 100px;
     margin-bottom: 30px;
   }
 
-  h2 {
-    font-size: 25px;
+  .education {
+    width: 100%;
+    gap: 50px;
+  }
+
+  .education-container > h3 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .education-1 > h4, .education-2 > h4 {
+    padding-top: 10px;
+    font-size: 12px;
+  }
+  
+  .education-1 > p, .education-2 > p {
+    padding-top: 10px;
+    color: #696969;
+    font-size: 10px;
+  }
+
+  .education-container > h3, .skill-container > h3  {
+    font-size: 20px;
+  }
+
+  .edu-img-1 {
+    width: 100px;
+    height: 50px;
+  }
+
+  .edu-img-2 {
+    width: 100px;
+    height: 50px;
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2px;
   }
 
   .skill-container > h2 {
     margin-bottom: 20px;
+  }
+
+  .skill-img-1 {
+    height: 100px;
+    width: 100px;
+  }
+
+  .skill-img-2 {
+    height: 100px;
+    width: 80px;
+  }
+
+  .skill-img-3 {
+    height: 110px;
+    width: 180px;
+  }
+
+  .skill-img-4 {
+    height: 90px;
+    width: 100px;
   }
 
   .socials {
@@ -155,26 +238,6 @@ a {
 
   .socials > a {
     padding-right: 10px;
-  }
-
-  .img-1 {
-    height: 100px;
-    width: 100px;
-  }
-
-  .img-2 {
-    height: 100px;
-    width: 80px;
-  }
-
-  .img-3 {
-    height: 110px;
-    width: 180px;
-  }
-
-  .img-4 {
-    height: 90px;
-    width: 100px;
   }
 
 }
